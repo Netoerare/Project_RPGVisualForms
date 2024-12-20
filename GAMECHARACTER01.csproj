@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{320CBEA9-3452-40C1-B545-D5B6A59DBC9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GAMECHARACTER01</RootNamespace>
+    <AssemblyName>GAMECHARACTER01</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameCharacter.cs" />
+    <Compile Include="Models\Mage.cs" />
+    <Compile Include="Models\Warrior.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\eerie-pixel-art-castle-under-full-moon-bats-flying-night-sky-spooky-atmosphere-complemented-torches-327520258.webp" />
+    <None Include="Resources\image-showcasing-castle_931878-89270.avif" />
+    <None Include="Resources\pixel-art-eerie-castle-night-with-full-moon-bats-game-background-design-video-games-posters-cards_91645-9987.avif" />
+    <None Include="Resources\pixel-art-game-level-background-600nw-2303999851.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dex50vf-b0d61793-e4e0-42d3-acf-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-design6-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3i2cux-04694e9b-2c45-4189-8bf-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db2dc2c27b6e05f-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-design8-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-design9-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_885994379_5kHw8aYvxSORQZsYtmFpIn20IguRMnEh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_719269261_nWu4SEqkEwBDuuRMt3MXqRRpraOFQoJU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1685585070_en-idei-club-p-pixel-background-dizain-instagram-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d96txtj-5d565df7-832c-44b6-870c-6a46028beebf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-design2-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-design1-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c1-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire_dmg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire_atk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewolf_atk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewolf_dmg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewolf_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools %287%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desehca-52be5acc-4da0-40a4-89d-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools %2810%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaaaaaa-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaaa-unscreen %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaaa-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inosss-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inoss-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tannn-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tann-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Elder Scrolls IV Oblivion Theme [HD Quality].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOOSE YOUR FIGHTER %28Deep Voice%29 - Sound Effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The-Elder-Scrolls-IV-Oblivion-Theme-_HD-Quality_.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
